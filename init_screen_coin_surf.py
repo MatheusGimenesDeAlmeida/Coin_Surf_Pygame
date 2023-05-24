@@ -3,7 +3,10 @@ import random
 from os import path
 import config_coin_surf
 import assets_coin_surf
-
+pygame.mixer.init()
+musica=pygame.mixer.music.load('assets_coin_surf/snd/Red Hot Chili Peppers - Californication (Highest Quality).mp3')
+pygame.mixer.music.set_volume(.3)
+pygame.mixer.music.play()
 def init_screen(screen):
 
     # Variável para o ajuste de velocidade
