@@ -1,17 +1,14 @@
 import pygame
 from os import path
 import config_coin_surf
-pygame.mixer.init()
-musica=pygame.mixer.music.load('assets_coin_surf/snd/Red Hot Chili Peppers - Californication (Highest Quality).mp3')
-pygame.mixer.music.set_volume(.3)
-pygame.mixer.music.play()
-def init_screen(screen):
+
+def manual_screen(screen):
 
     # Variável para o ajuste de velocidade
     clock = pygame.time.Clock()
 
     # Carrega o fundo da tela inicial
-    background = pygame.image.load(path.join(config_coin_surf.IMG_DIR, 'tela_inicio_coin_surf.jpg')).convert()
+    background = pygame.image.load(path.join(config_coin_surf.IMG_DIR, 'tela_inicio_2_coin_surf.jpg')).convert()
     background_rect = background.get_rect()
 
     running = True
@@ -28,7 +25,7 @@ def init_screen(screen):
                 running = False
 
             if event.type == pygame.KEYUP:
-                state = config_coin_surf.INIT2
+                state = config_coin_surf.GAME
                 running = False
 
         # A cada loop, redesenha o fundo e os sprites

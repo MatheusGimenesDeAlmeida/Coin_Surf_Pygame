@@ -11,8 +11,8 @@ HEIGHT = 410 # Altura da tela
 FPS = 90 # Frames por segundo
 
 # Define tamanhos
-SHARPEDO_WIDTH = 90
-SHARPEDO_HEIGHT = 90
+SHARPEDO_WIDTH = 85
+SHARPEDO_HEIGHT = 85
 PIKACHU_WIDTH = 62
 PIKACHU_HEIGHT = 62
 MOEDA_AMARELA_WIDTH = 50
@@ -32,5 +32,6 @@ YELLOW = (255, 255, 0)
 
 # Estados para controle do fluxo da aplicação
 INIT = 0
-GAME = 1
-QUIT = 2
+INIT2 = 1
+GAME = 2
+QUIT = 3

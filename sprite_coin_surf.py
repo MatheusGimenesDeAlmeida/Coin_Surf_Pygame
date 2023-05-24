@@ -94,7 +94,7 @@ class Moeda_verde(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = WIDTH
         self.rect.y = random.randint((HEIGHT/2), HEIGHT- MOEDA_AMARELA_HEIGHT)
-        self.speedx = -3
+        self.speedx = -5
         self.speedy = 0
 
     def update(self):
@@ -108,7 +108,7 @@ class Moeda_verde(pygame.sprite.Sprite):
             self.image = assets[MOEDA_VERDE_IMG]
             self.rect.x = WIDTH
             self.rect.y = random.randint((HEIGHT/2), HEIGHT- MOEDA_AMARELA_HEIGHT)
-            self.speedx = -3
+            self.speedx = -5
             self.speedy = 0
 
 class Moeda_vermelha(pygame.sprite.Sprite):

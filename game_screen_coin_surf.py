@@ -45,9 +45,9 @@ def game_screen(window):
     for i in range(1):
         moeda_verde = Moeda_verde(assets)
         all_sprites.add(moeda_verde)
-        all_moedas_verdes.add(moeda_verde)'''
+        all_moedas_verdes.add(moeda_verde)
 
-    '''# Criando as moedas vermelhas
+    # Criando as moedas vermelhas
     for i in range(1):
         moeda_vermelha = Moeda_vermelha(assets)
         all_sprites.add(moeda_vermelha)
@@ -80,18 +80,18 @@ def game_screen(window):
                     # Dependendo da tecla, altera a velocidade.
                     keys_down[event.key] = True
                     if event.key == pygame.K_UP:
-                        player.speedy -= 8
+                        player.speedy -= 5
                     if event.key == pygame.K_DOWN:
-                        player.speedy += 8
+                        player.speedy += 5
 
                 # Verifica se soltou alguma tecla.
                 if event.type == pygame.KEYUP:
                     # Dependendo da tecla, altera a velocidade.
                     if event.key in keys_down and keys_down[event.key]:
                         if event.key == pygame.K_UP:
-                            player.speedy += 8
+                            player.speedy += 5
                         if event.key == pygame.K_DOWN:
-                            player.speedy -= 8
+                            player.speedy -= 5
 
         # ----- Atualiza estado do jogo
         # Atualizando a posição dos Sharpedos e moedas
