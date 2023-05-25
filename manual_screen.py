@@ -1,7 +1,7 @@
 import pygame
 from os import path
 import config_coin_surf
-
+from config_coin_surf import WIDTH, HEIGHT
 def manual_screen(screen):
 
     # Variável para o ajuste de velocidade
@@ -10,7 +10,8 @@ def manual_screen(screen):
     # Carrega o fundo da tela inicial
     background = pygame.image.load(path.join(config_coin_surf.IMG_DIR, 'tela_inicio_2_coin_surf.jpg')).convert()
     background_rect = background.get_rect()
-
+    background = pygame.transform.scale(background, (WIDTH, HEIGHT))
+    
     running = True
     while running:
 

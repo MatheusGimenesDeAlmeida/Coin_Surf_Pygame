@@ -1,17 +1,19 @@
 import pygame
 from os import path
+from config_coin_surf import WIDTH, HEIGHT
 import config_coin_surf
 pygame.mixer.init()
-musica=pygame.mixer.music.load('assets_coin_surf/snd/Red Hot Chili Peppers - Californication (Highest Quality).mp3')
-pygame.mixer.music.set_volume(.3)
+musica=pygame.mixer.music.load('assets_coin_surf/snd/DubDogz & Bhaskar - Infinity (DubDogz & Bhaskar Edit) [Official Lyric Video].mp3')
+pygame.mixer.music.set_volume(.6)
 pygame.mixer.music.play()
-def init_screen(screen):
 
+def init_screen(screen):
     # Variável para o ajuste de velocidade
     clock = pygame.time.Clock()
 
     # Carrega o fundo da tela inicial
     background = pygame.image.load(path.join(config_coin_surf.IMG_DIR, 'tela_inicio_coin_surf.jpg')).convert()
+    background = pygame.transform.scale(background, (WIDTH, HEIGHT))
     background_rect = background.get_rect()
 
     running = True
