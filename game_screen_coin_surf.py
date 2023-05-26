@@ -1,7 +1,7 @@
 import pygame
 from config_coin_surf import FPS, WIDTH, HEIGHT, BLACK, YELLOW
 from assets_coin_surf import load_assets, BACKGROUND, SCORE_FONT
-from sprite_coin_surf import Pikachu, Sharpedo, Moeda_amarela, Moeda_verde, Moeda_vermelha
+from sprites_coin_surf import Pikachu, Sharpedo, Moeda_amarela, Moeda_verde, Moeda_vermelha
 
 score2 = 0 
 
